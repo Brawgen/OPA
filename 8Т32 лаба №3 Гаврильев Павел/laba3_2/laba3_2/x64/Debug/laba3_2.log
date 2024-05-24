@@ -1,0 +1,6 @@
+﻿  diagonalaverage.cpp
+  laba3_2.cpp
+C:\Users\pavlu\OneDrive\Documents\!учеба\ОПА\8Т32 лаба №3 Гаврильев Павел\laba3_2\laba3_2\laba3_2.cpp(12,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\pavlu\OneDrive\Documents\!учеба\ОПА\8Т32 лаба №3 Гаврильев Павел\laba3_2\laba3_2\laba3_2.cpp(12,26): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+  Создание кода...
+  laba3_2.vcxproj -> C:\Users\pavlu\OneDrive\Documents\!учеба\ОПА\8Т32 лаба №3 Гаврильев Павел\laba3_2\x64\Debug\laba3_2.exe

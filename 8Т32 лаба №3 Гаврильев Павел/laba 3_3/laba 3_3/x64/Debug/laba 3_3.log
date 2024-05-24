@@ -1,0 +1,12 @@
+﻿  columnreplace.cpp
+  laba 3_3.cpp
+C:\Users\pavlu\OneDrive\Documents\!учеба\ОПА\8Т32 лаба №3 Гаврильев Павел\laba 3_3\laba 3_3\laba 3_3.cpp(13,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\pavlu\OneDrive\Documents\!учеба\ОПА\8Т32 лаба №3 Гаврильев Павел\laba 3_3\laba 3_3\laba 3_3.cpp(13,26): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\pavlu\OneDrive\Documents\!учеба\ОПА\8Т32 лаба №3 Гаврильев Павел\laba 3_3\laba 3_3\laba 3_3.cpp(16,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\pavlu\OneDrive\Documents\!учеба\ОПА\8Т32 лаба №3 Гаврильев Павел\laba 3_3\laba 3_3\laba 3_3.cpp(16,26): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\pavlu\OneDrive\Documents\!учеба\ОПА\8Т32 лаба №3 Гаврильев Павел\laba 3_3\laba 3_3\laba 3_3.cpp(34,46): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\pavlu\OneDrive\Documents\!учеба\ОПА\8Т32 лаба №3 Гаврильев Павел\laba 3_3\laba 3_3\laba 3_3.cpp(34,45): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\pavlu\OneDrive\Documents\!учеба\ОПА\8Т32 лаба №3 Гаврильев Павел\laba 3_3\laba 3_3\laba 3_3.cpp(38,46): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\pavlu\OneDrive\Documents\!учеба\ОПА\8Т32 лаба №3 Гаврильев Павел\laba 3_3\laba 3_3\laba 3_3.cpp(38,45): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+  Создание кода...
+  laba 3_3.vcxproj -> C:\Users\pavlu\OneDrive\Documents\!учеба\ОПА\8Т32 лаба №3 Гаврильев Павел\laba 3_3\x64\Debug\laba 3_3.exe
