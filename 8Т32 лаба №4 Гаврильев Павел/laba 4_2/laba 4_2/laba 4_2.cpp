@@ -6,7 +6,7 @@
 int main()
 {
     setlocale(LC_ALL, "ru");
-    char* stroka = new char[100];
+    char* stroka = new char[300];
     read_file(stroka, "stdfile.txt");
     std::cout << "Сумма цифр слов состоящих только из цифр: ";
 
