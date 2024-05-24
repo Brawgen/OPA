@@ -5,6 +5,7 @@
 int main()
 {
     std::string stroka;
+    bool flag = false;
 
     std::ifstream fin("stdfile.txt");
     std::getline(fin, stroka);
@@ -18,19 +19,17 @@ int main()
                 count++;
             }
         }
-        if (count == 1) {
+        if (count == 2) {
             stroki += stroka[i];
+            flag = true;
         }
     }
 
     std::getline(fin, stroka);
 
-    std::cout << stroki+stroka;
-
-   /* std::getline(fin, stroka);
-    fin.close();
-    
-    std::cout << stroka << std::endl;*/
+    if (flag == true) {
+        std::cout << stroki + stroka;
+    }
 
 
 }
