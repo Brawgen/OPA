@@ -1,3 +1,7 @@
 ﻿  digitsum.cpp
-C:\Users\pavlu\OneDrive\Documents\!учеба\ОПА\8Т32 лаба №4 Гаврильев Павел\laba 4_2\laba 4_2\digitsum.cpp(20,25): warning C4551: в вызове функции отсутствует список аргументов
-  laba 4_2.vcxproj -> C:\Users\pavlu\OneDrive\Documents\!учеба\ОПА\8Т32 лаба №4 Гаврильев Павел\laba 4_2\x64\Debug\laba 4_2.exe
+C:\Users\pavlu\OneDrive\Documents\!учеба\OPA\8Т32 лаба №4 Гаврильев Павел\laba 4_2\laba 4_2\digitsum.cpp(20,25): warning C4551: в вызове функции отсутствует список аргументов
+  laba 4_2.cpp
+  read_file.cpp
+  Создание кода...
+  LINK : не найден или не выполнена сборка C:\Users\pavlu\OneDrive\Documents\!учеба\OPA\8Т32 лаба №4 Гаврильев Павел\laba 4_2\x64\Debug\laba 4_2.exe при последней инкрементной компоновке; выполняется полная компоновка
+  laba 4_2.vcxproj -> C:\Users\pavlu\OneDrive\Documents\!учеба\OPA\8Т32 лаба №4 Гаврильев Павел\laba 4_2\x64\Debug\laba 4_2.exe
