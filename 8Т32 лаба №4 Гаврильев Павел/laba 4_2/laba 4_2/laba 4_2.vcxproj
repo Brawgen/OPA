@@ -128,11 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="digitsum.cpp" />
+    <ClCompile Include="filesize.cpp" />
     <ClCompile Include="laba 4_2.cpp" />
     <ClCompile Include="read_file.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="digitsum.h" />
+    <ClInclude Include="filesize.h" />
     <ClInclude Include="read_file.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

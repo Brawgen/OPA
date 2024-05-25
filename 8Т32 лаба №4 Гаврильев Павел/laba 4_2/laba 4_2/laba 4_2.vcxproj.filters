@@ -24,12 +24,18 @@
     <ClCompile Include="digitsum.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="filesize.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="read_file.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="digitsum.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="filesize.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

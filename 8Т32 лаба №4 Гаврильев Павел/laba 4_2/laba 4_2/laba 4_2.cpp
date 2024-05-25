@@ -2,16 +2,19 @@
 #include "read_file.h"
 #include <fstream>
 #include "digitsum.h"
+#include "filesize.h"
 
 int main()
 {
     setlocale(LC_ALL, "ru");
-    char* stroka = new char[200];
-    read_file(stroka, "stdfile.txt");
+    char* stroka = new char[filesize("stdfile.txt")];
     std::cout << "Сумма цифр слов состоящих только из цифр: ";
-
-    
-
-    digitsum(stroka);
+    std::ifstream fin("stdfile.txt");
+    while (fin.getline(stroka, filesize("stdfile.txt"))) {
+        digitsum(stroka);
+        std::cout<<""<<std::endl;
+    }
+    /*fin.getline(stroka, strlen(stroka));*/
+    fin.close();
 }
 

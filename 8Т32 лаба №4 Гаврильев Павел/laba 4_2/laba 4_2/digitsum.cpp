@@ -7,6 +7,7 @@ void digitsum(char* stroka)
         if (stroka[i] == 32 || (stroka[0] > 47 && stroka[0] < 58 && i==0)) {
             int sum = 0;
             if (stroka[i] > 47 && stroka[i] < 58 && i==0) {
+                std::cout << stroka[i];
                 sum = sum + (int(stroka[0]) - 48);
             }
             bool flag = true;
@@ -24,11 +25,12 @@ void digitsum(char* stroka)
                         i = k - 1;
                         if (sum != 0) {
                             flag3 = true;
-                            std::cout << sum << " ";
+                            std::cout <<"=" << sum << " ";
                         }
                         break;
                     }
                     else {
+                        std::cout << stroka[k];
                         sum = sum + (int(stroka[k]) - 48);
                     }
                 }
