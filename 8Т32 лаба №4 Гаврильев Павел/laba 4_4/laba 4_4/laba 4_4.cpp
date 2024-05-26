@@ -3,5 +3,6 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    char stroka[500];
+    read_file(stroka,"stdfile.txt");
 }
