@@ -21,9 +21,15 @@
     <ClCompile Include="read_file.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="emailcorrection.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="readfile.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="emailcorrection.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
