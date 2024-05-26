@@ -1,4 +1,5 @@
 #pragma once
 #include <fstream>
 #include <iostream>
-void read_file(char* stroka, std::string file_name);
+#include <string>
+void read_file(std::string stroka, std::string file_name);

@@ -1,8 +1,9 @@
-﻿#include "read_file.h"z
+﻿#include "read_file.h"
 #include <iostream>
 
 int main()
 {
-    char stroka[500];
+    setlocale(LC_ALL, "ru");
+    std::string stroka;
     read_file(stroka,"stdfile.txt");
 }
