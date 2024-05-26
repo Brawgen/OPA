@@ -5,7 +5,7 @@
 int main()
 {
     setlocale(LC_ALL, "ru");
-    std::string stroka1;
-    read_file(stroka1,"stdfile.txt");
-    std::cout<<stroka1;
+    std::string stroka;
+    read_file(stroka,"stdfile.txt");
+    std::cout<<stroka;
 }
