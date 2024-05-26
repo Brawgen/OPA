@@ -1,7 +1,2 @@
-﻿  read_file.cpp
-  laba 4_4.cpp
-C:\Users\pavlu\OneDrive\Documents\!учеба\OPA\8Т32 лаба №4 Гаврильев Павел\laba 4_4\laba 4_4\laba 4_4.cpp(9,5): error C2664: "void read_file(char *,std::string)": невозможно преобразовать аргумент 1 из "std::string" в "char *"
-C:\Users\pavlu\OneDrive\Documents\!учеба\OPA\8Т32 лаба №4 Гаврильев Павел\laba 4_4\laba 4_4\laba 4_4.cpp(9,15): message : Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
-C:\Users\pavlu\OneDrive\Documents\!учеба\OPA\8Т32 лаба №4 Гаврильев Павел\laba 4_4\laba 4_4\read_file.h(4,6): message : см. объявление "read_file"
-C:\Users\pavlu\OneDrive\Documents\!учеба\OPA\8Т32 лаба №4 Гаврильев Павел\laba 4_4\laba 4_4\laba 4_4.cpp(9,5): message : при попытке сопоставить список аргументов "(std::string, const char [12])"
-  Создание кода...
+﻿  laba 4_4.cpp
+  laba 4_4.vcxproj -> C:\Users\pavlu\OneDrive\Documents\!учеба\OPA\8Т32 лаба №4 Гаврильев Павел\laba 4_4\x64\Debug\laba 4_4.exe
