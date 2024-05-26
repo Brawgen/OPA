@@ -1,6 +1,7 @@
 ﻿#include <fstream>
 #include <iostream>
 #include <string>
+#include "filesize.h"
 
 int main()
 {
