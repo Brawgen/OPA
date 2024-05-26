@@ -1,6 +1,6 @@
 #include "read_file.h"
 
-std::string read_file(std::string stroka, std::string file_name)
+void read_file(char* stroka, std::string file_name)
 {
     std::ifstream fin(file_name);
     if (fin.is_open()) {
@@ -9,7 +9,6 @@ std::string read_file(std::string stroka, std::string file_name)
     else {
         std::cout << "Ошибка открытия файла.";
     }
-    std::getline(fin, stroka);
+    fin.getline(stroka, strlen(stroka));
     fin.close();
-    return stroka;
 }
