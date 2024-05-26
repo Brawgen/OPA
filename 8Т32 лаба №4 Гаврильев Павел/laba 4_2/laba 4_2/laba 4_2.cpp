@@ -14,7 +14,6 @@ int main()
         digitsum(stroka);
         std::cout<<""<<std::endl;
     }
-    /*fin.getline(stroka, strlen(stroka));*/
     fin.close();
 }
 
