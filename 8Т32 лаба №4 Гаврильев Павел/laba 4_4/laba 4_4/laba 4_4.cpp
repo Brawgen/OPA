@@ -11,6 +11,7 @@ int main()
     stroka=read_file(stroka,"stdfile.txt");//чтение строки из файла
     std::cout << stroka;
     emailcorrection(stroka);//проверка Email адреса
+    //посмотреть условное выражения
     
     
 }
