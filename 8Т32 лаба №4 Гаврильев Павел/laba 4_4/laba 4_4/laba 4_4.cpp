@@ -9,6 +9,7 @@ int main()
     setlocale(LC_ALL, "ru");
     std::string stroka;
     stroka=read_file(stroka,"stdfile.txt");//чтение строки из файла
+    std::cout << stroka;
     emailcorrection(stroka);//проверка Email адреса
     
     

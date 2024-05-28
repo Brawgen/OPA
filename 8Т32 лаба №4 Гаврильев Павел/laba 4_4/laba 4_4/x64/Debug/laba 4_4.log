@@ -1,3 +1,4 @@
 ﻿  emailcorrection.cpp
-C:\Users\pavlu\OneDrive\Documents\!учеба\OPA\8Т32 лаба №4 Гаврильев Павел\laba 4_4\laba 4_4\emailcorrection.cpp(18,98): warning C4805: ==: небезопасное смешение типа "int" и типа "bool" в операции
+C:\Users\pavlu\OneDrive\Documents\!учеба\OPA\8Т32 лаба №4 Гаврильев Павел\laba 4_4\laba 4_4\emailcorrection.cpp(21,98): warning C4805: ==: небезопасное смешение типа "int" и типа "bool" в операции
+C:\Users\pavlu\OneDrive\Documents\!учеба\OPA\8Т32 лаба №4 Гаврильев Павел\laba 4_4\laba 4_4\emailcorrection.cpp(35,155): warning C4805: ==: небезопасное смешение типа "int" и типа "bool" в операции
   laba 4_4.vcxproj -> C:\Users\pavlu\OneDrive\Documents\!учеба\OPA\8Т32 лаба №4 Гаврильев Павел\laba 4_4\x64\Debug\laba 4_4.exe

@@ -7,30 +7,32 @@ void emailcorrection(std::string stroka)
     bool flag1 = false;
     bool flag2 = false;
     bool flag3 = false;
+    int sflag = false;
     int i = 0;
     for (i = 0; i < size(stroka); i++) {//проверка локальной части
-        int sflag = false;
+        sflag = false;
+        flag1 = false;
         for (int j = 0; j < sizeof(symbol); j++) {
             if (stroka[i] == symbol[j]) {
-                sflag = true;
+                flag1 = true;
+                break;
             }
         }
         if ((stroka[i] < 123 and stroka[i]>96) or (stroka[i] < 58 and stroka[i]>46) or (sflag == true) or (stroka[i] < 91 and stroka[i]>64)) {
             flag1 = true;
-        }
-        else {
-            flag1 = false;
-
         }
         if (stroka[i] == 64) {
             flag1 = true;
             i++;
             break;
         }
+        if (flag1 == false) {
+            break;
+        }
     }
     for (i; i < size(stroka); i++) {//проверка домена
         flag2 = false;
-        if ((stroka[i] < 123 and stroka[i]>96) or (stroka[i] < 58 and stroka[i]>46) or (stroka[i] < 91 and stroka[i]>64) or (stroka[i] == 45)) {
+        if ((stroka[i] < 123 and stroka[i]>96) or (stroka[i] < 58 and stroka[i]>46) or (stroka[i] < 91 and stroka[i]>64) or (stroka[i] == 45) and (sflag==true) and (flag1==true)) {
             flag2 = true;
         }
         if ((stroka[i] == 46) and (size(stroka) - i > 2)) {
