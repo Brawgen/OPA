@@ -18,6 +18,9 @@ void emailcorrection(std::string stroka)
                 break;
             }
         }
+        if (sflag == false) {
+            break;
+        }
         if ((stroka[i] < 123 and stroka[i]>96) or (stroka[i] < 58 and stroka[i]>46) or (sflag == true) or (stroka[i] < 91 and stroka[i]>64)) {
             flag1 = true;
         }
