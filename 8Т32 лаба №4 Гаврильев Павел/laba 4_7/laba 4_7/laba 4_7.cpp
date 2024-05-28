@@ -1,9 +1,19 @@
 ﻿#include <iostream>
+#include <fstream>
+#include "readfile.h"
+#include "rec_file.h"
+#include "security.h"
 
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    setlocale(LC_ALL, "ru");
+    std::string stroka;
+    stroka = read_file(stroka, "stdfile.txt");
+    stroka = security(stroka);
+    rec_file(stroka, "stdfile.txt");
+
+   
 }
 
 

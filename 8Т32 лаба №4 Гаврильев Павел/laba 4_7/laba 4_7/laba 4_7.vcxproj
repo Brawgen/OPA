@@ -127,11 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\laba 4_6\laba 4_6\read_file.cpp" />
     <ClCompile Include="laba 4_7.cpp" />
+    <ClCompile Include="read_file.cpp" />
+    <ClCompile Include="rec_file.cpp" />
+    <ClCompile Include="security.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\laba 4_6\laba 4_6\readfile.h" />
+    <ClInclude Include="readfile.h" />
+    <ClInclude Include="rec_file.h" />
+    <ClInclude Include="security.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

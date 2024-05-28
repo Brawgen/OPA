@@ -18,12 +18,24 @@
     <ClCompile Include="laba 4_7.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\laba 4_6\laba 4_6\read_file.cpp">
+    <ClCompile Include="read_file.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="rec_file.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="security.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\laba 4_6\laba 4_6\readfile.h">
+    <ClInclude Include="readfile.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="rec_file.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="security.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
