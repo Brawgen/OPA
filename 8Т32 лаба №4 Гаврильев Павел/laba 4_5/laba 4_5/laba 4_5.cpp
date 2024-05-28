@@ -8,6 +8,5 @@ int main()
 	std::cout << "Сгенерированная строка>>";
 	randomizer(stroka);
 	
-
 }
 
