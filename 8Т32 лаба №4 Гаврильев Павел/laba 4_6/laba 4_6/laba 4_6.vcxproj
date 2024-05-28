@@ -127,7 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="alphabet.cpp" />
     <ClCompile Include="laba 4_6.cpp" />
+    <ClCompile Include="read_file.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="alphabet.h" />
+    <ClInclude Include="readfile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
