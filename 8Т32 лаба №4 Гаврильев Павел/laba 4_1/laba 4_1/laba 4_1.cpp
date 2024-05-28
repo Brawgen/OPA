@@ -13,7 +13,6 @@ int main()
     fin.seekg(0, std::ios::beg);
     fin.close();
     char* stroka=new char[kol];
-    std::cout << kol << std::endl;
     read_file(stroka, "stdfile.txt");
     int length=strlen(stroka);
     for (int i = 0; i < length; i++) {
