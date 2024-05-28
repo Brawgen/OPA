@@ -9,6 +9,7 @@ void alphabet(std::string stroka)
             flag = true;
         }
         if (flag == false) {
+            std::cout << stroka[i] << std::endl;
             break;
         }
     }

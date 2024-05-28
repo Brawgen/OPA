@@ -32,7 +32,7 @@ void lineconnection(std::string file_name)
     std::getline(fin, stroka);//получение второй строки
 
     if (flag == true) {//соединение строки
-        std::cout <<"Полученна строка>>" << stroki + stroka;
+        std::cout <<"Полученная строка>>" << stroki + stroka;
     }
     else {
         std::cout << "Такой строки нету.";

@@ -7,7 +7,7 @@
 
 int main()
 {
-    setlocale(LC_ALL, "ru");
+    setlocale(LC_ALL, "ru"); // алгоритм шифрование Цезаря
     std::string stroka;
     stroka = read_file(stroka, "stdfile.txt");
     stroka = security(stroka);
