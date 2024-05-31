@@ -127,10 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\laba 4_3\laba 4_3\filesize.cpp" />
+    <ClCompile Include="digitgount.cpp" />
     <ClCompile Include="laba 4_1.cpp" />
     <ClCompile Include="read_file.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\laba 4_3\laba 4_3\filesize.h" />
+    <ClInclude Include="digitgount.h" />
     <ClInclude Include="read_file.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

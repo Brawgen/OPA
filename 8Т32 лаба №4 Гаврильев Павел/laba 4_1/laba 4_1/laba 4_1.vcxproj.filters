@@ -21,9 +21,21 @@
     <ClCompile Include="read_file.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\laba 4_3\laba 4_3\filesize.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="digitgount.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="read_file.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\laba 4_3\laba 4_3\filesize.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="digitgount.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
