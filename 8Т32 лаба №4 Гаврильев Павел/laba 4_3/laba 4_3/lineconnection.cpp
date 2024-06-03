@@ -8,13 +8,14 @@ void lineconnection(std::string file_name)
     std::ifstream fin(file_name);//открытие файла
     if (fin.is_open()) {//проверка на открытие
         std::cout << "Файл открыт успешно." << std::endl;
+        std::getline(fin, stroka);//получение первой строки
     }
     else {
         std::cout << "Ошибка открытия файла.";
         exit(0);
     }
 
-    std::getline(fin, stroka);//получение первой строки
+   
 
     for (int i = 0; i < stroka.size(); i++) {//поиск символов которые встречаются два раза
         int count = 0;
@@ -35,7 +36,7 @@ void lineconnection(std::string file_name)
         std::cout <<"Полученная строка>>" << stroki + stroka;
     }
     else {
-        std::cout << "Такой строки нету.";
+        std::cout << "Такой строки нет.";
     }
     fin.close();//закрытие файла
 }
