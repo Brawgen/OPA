@@ -1,14 +1,22 @@
 ﻿#include <iostream>
+#include <chrono>
+#include <thread>
 
-struct queue {
-    int nomerkassy, pokup;
-};
+
+using namespace std; 
 
 int main()
 {
-    queue pt {51,2};
-    std::cout << pt.nomerkassy;
-    
+	cout << "___|" << "**********\n";
+	cout << "\n___|" << "*****";
+	
+	std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+	cout << "\033[2J\033[1;1H";
+	cout << "___|" << "*********\n";
+	cout << "\n___|" << "****";
+	std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+	cout << "\033[2J\033[1;1H";
+	cout << "___|" << "********\n";
+	cout << "\n___|" << "***";
+	
 }
-
-
