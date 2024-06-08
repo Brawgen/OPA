@@ -5,6 +5,7 @@ void randomizer(std::string stroka)
 	std::random_device rd;//получение началоьного значения от аппаратного обеспечения
 	std::mt19937 gen(rd());//создайте объект класса engine
 	std::uniform_int_distribution<> digitdist(48, 57);//диапазон для чисел
+	//stroka[i] = digitdist(gen);
 	std::uniform_int_distribution<> symboldist(0, 32);//диапазон для символов
 	std::uniform_int_distribution<> binarydist(48, 49);//диапащон для 0 и 1
 
