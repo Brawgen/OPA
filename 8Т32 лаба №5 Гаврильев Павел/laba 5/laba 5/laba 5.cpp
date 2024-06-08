@@ -3,118 +3,48 @@
 #include <thread>
 #include <string>
 #include <random>
+#include <queue>
 
 using namespace std; 
 
 int main()
 {
+	bool k1 = false;
+	bool k2 = false;
+	bool k3 = false;
+	setlocale(LC_ALL, "ru");
 	int new_pokup = 0;
 	std::random_device rd;//получение началоьного значения от аппаратного обеспечения
 	std::mt19937 gen(rd());//создайте объект класса engine
-	std::uniform_int_distribution<> digitdist(0, 33);//диапазон для чисел
+	std::uniform_int_distribution<> digitdist(1, 33);//диапазон для чисел
 	
-
+	std::queue<int> queue;  // пустая очередь
+	for (int i = 1; i <=10; i++) {
+		queue.push(i);
+	}
+	if (queue.size() > 0 and queue.size() < 11) {
+		k1 = true;
+	}
+	if (queue.size() > 10 and queue.size() < 21) {
+		k1 = true;
+		k2 = true;
+	}
+	if (queue.size() >30 and queue.size() < 21) {
+		k1 = true;
+		k2 = true;
+		k3 = true;
+	}
 	cout << "___|";
-	cout << "\n___|";
-	cout << "\n___|";
-	
-	while (true) {
-		int a1 = 0;
-		int a2 = 0;
-		int a3 = 0;
-		new_pokup = digitdist(gen);
-		int b = new_pokup;
-		int i=0;
-		std::this_thread::sleep_for(std::chrono::seconds(2));
-		cout << "\x1B[2J\x1B[H";
-		if (a1 < 10) {
-			while (a1 <= 10 and new_pokup!=0) {
-				a1++;
-				new_pokup--;
-			}
-		}
-		if (a2 < 10) {
-			while (a2 <= 10 and new_pokup != 0) {
-				a2++;
-				new_pokup--;
-			}
-		}
-		if (a3 < 30) {
-			while (a3 <= 10 and new_pokup != 0) {
-				a3++;
-				new_pokup--;
-			}
-		}
-		if (a1 != 0) {
-			cout << "__*|";
-			for (int j = 1; j <= a1; j++) {
-				cout <<'*';
-			}
-		}
-		else {
-			cout << "___|";
-		}
-		if (a2 != 0) {
-			cout << "\n__*|";
-			for (int j = 1; j <= a2; j++) {
-				cout << '*';
-			}
-		}
-		else {
-			cout << "\n___|";
-		}
-		if (a3 != 0) {
-			cout << "\n__*|";
-			for (int j = 1; j <= a3; j++) {
-				cout << '*';
-			}
-		}
-		else {
-			cout << "\n___|";
-		}
-		for (int j = 1; j <= b; j++) {
-			if (a1 != 0) {
-				a1--;
-			}
-			if (a2 != 0) {
-				a2--;
-			}
-			if (a3 != 0) {
-				a3--;
-			}
-			std::this_thread::sleep_for(std::chrono::seconds(2));
-			cout << "\x1B[2J\x1B[H";
-			if (a1 != 0) {
-				cout << "__*|";
-				for (int k = 1; k <=a1; k++) {
-					cout << '*';
-				}
-			}
-			else {
-				cout << "___|";
-			}
-			if (a2 != 0) {
-				cout << "\n__*|";
-				for (int k = 1; k <= a2; k++) {
-					cout << '*';
-				}
-			}
-			else {
-				cout << "\n___|";
-			}
-			if (a3 != 0) {
-				cout << "\n__*|";
-				for (int k = 1; k <= a3; k++) {
-					cout << '*';
-				}
-			}
-			else {
-				cout << "\n___|";
-			}
+	if (k1 == true and k2 == false) {
+		for (int i = 1; i <= 10; i++) {
+			cout<<queue.front();
+			queue.pop();
 		}
 	}
 }
 
+//нужно создать еще очереди для каждой кассы и с основной очереди кидать на кассы потом выводить эту очередь потом крч
+//  сделать функцию которая будет удалять с очередей касс покупателей и сделать вызов этой функции как рекурсия с условием пока в очереди люей нет
 
 
 // Реализация очередей в C++
