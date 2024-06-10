@@ -140,6 +140,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="laba 5.cpp" />
+    <ClCompile Include="work.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="queque.h" />
+    <ClInclude Include="work.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
