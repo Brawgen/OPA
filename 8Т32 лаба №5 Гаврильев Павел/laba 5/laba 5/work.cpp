@@ -53,11 +53,14 @@ void work(int* mass1, int* mass2, int* mass3, bool k1, bool k2, bool k3, int siz
 			mass31[j] = mass3[j + 1];
 		}
 		work(mass11, mass21, mass31, k1, k2, k3,size11,size21,size31);
+		delete[] mass11;
+		delete[] mass21;
+		delete[] mass31;
 	}
 	else {
 		cout << "___|";
 		cout << "\n___|";
 		cout << "\n___|";
-		exit(0);
+
 	}
 }

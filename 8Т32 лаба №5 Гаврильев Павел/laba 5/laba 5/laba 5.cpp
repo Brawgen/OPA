@@ -18,7 +18,7 @@ int main()
 	std::random_device rd;//получение началоьного значения от аппаратного обеспечения
 	std::mt19937 gen(rd());//создайте объект класса engine
 	std::uniform_int_distribution<> digitdist(1, 50);//диапазон для чисел
-	int size = 34;
+	int size = 5;
 	rear = size;
 	if (size > 0 and size < 16) {
 		k1 = true;
@@ -60,7 +60,7 @@ int main()
 	for (int i=0; i <size; i++) {
 		mass[i] = i + 1;
 	}
-	while (mass[rear] - mass[front] != 0) {
+	while (size!=0) {
 		cout << "\x1B[2J\x1B[H";
 		
 		cout << "___| ";
@@ -99,123 +99,13 @@ int main()
 				}
 				mass3[j] = mass[l];
 				l++;
-				}
+			}
 		}
-			work(mass1, mass2, mass3, k1, k2, k3, size1,size2, size3);
+	work(mass1, mass2, mass3, k1, k2, k3, size1,size2, size3);
+	size = 0;
 	}
+	delete[] mass;
+	delete[] mass1;
+	delete[] mass2;
+	delete[] mass3;
 }
-
-
-//нужно создать еще очереди для каждой кассы и с основной очереди кидать на кассы потом выводить эту очередь потом крч
-//  сделать функцию которая будет удалять с очередей касс покупателей и сделать вызов этой функции как рекурсия с условием пока в очереди люей нет
-//#include <iostream>
-//#define SIZE 5
-//
-//using namespace std;
-//
-//class Queue {
-//private:
-//    int items[SIZE], front, rear;
-//
-//public:
-//    Queue() {
-//        front = -1;
-//        rear = -1;
-//    }
-//
-//    bool isFull() {
-//        if (front == 0 && rear == SIZE - 1) {
-//            return true;
-//        }
-//        return false;
-//    }
-//
-//    bool isEmpty() {
-//        if (front == -1)
-//            return true;
-//        else
-//            return false;
-//    }
-//
-//    void enQueue(int element) {
-//        if (isFull()) {
-//            cout << "Очередь заполнена";
-//        }
-//        else {
-//            if (front == -1) front = 0;
-//            rear++;
-//            items[rear] = element;
-//            cout << endl
-//                << "Добавлено значение " << element << endl;
-//        }
-//    }
-//
-//    int deQueue() {
-//        int element;
-//        if (isEmpty()) {
-//            cout << "Очередь пуста" << endl;
-//            return (-1);
-//        }
-//        else {
-//            element = items[front];
-//            if (front >= rear) {
-//                front = -1;
-//                rear = -1;
-//            } /* Внутри Q только один элемент, поэтому очередь сбрасывается
-//              в начальное состояние после удаления последнего элемента */
-//            else {
-//                front++;
-//            }
-//            cout << endl
-//                << "Удален элемент -> " << element << endl;
-//            return (element);
-//        }
-//    }
-//
-//    void display() {
-//        /* Функция выводит в консоль элементы очереди */
-//        int i;
-//        if (isEmpty()) {
-//            cout << endl
-//                << "Пустая очередь" << endl;
-//        }
-//        else {
-//            cout << endl
-//                << "Индекс FRONT -> " << front;
-//            cout << endl
-//                << "Элементы -> ";
-//            for (i = front; i <= rear; i++)
-//                cout << items[i] << "  ";
-//            cout << endl
-//                << "Индекс REAR-> " << rear << endl;
-//        }
-//    }
-//};
-//
-//int main() {
-//    setlocale(LC_ALL, "ru");
-//    Queue q;
-//
-//    // функцию deQueue нельзя применять к пустой очереди
-//    q.deQueue();
-//
-//    // Добавляем 5 элементов
-//    q.enQueue(1);
-//    q.enQueue(2);
-//    q.enQueue(3);
-//    q.enQueue(4);
-//    q.enQueue(5);
-//
-//    // Шестой элемент добавить нельзя — очередь заполнена
-//    q.enQueue(6);
-//
-//    q.display();
-//
-//    // Функция deQueue удаляет первый элемент — 1
-//    q.deQueue();
-//
-//    // Теперь внутри очереди 4 элемента
-//    q.display();
-//
-//    return 0;
-//}
