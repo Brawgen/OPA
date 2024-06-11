@@ -1,96 +1,107 @@
 ﻿#include <iostream>
 #include <string>
 #include <random>
-#include <queue>
 #include "work.h"
 
-using namespace std; 
+using namespace std;
 
 int main()
 {
+	int front=0, rear=0;
 	bool k1 = false;
 	bool k2 = false;
 	bool k3 = false;
-	int i = 1;
+	int size1 = 0;
+	int size2 = 0;
+	int size3 = 0;
 	setlocale(LC_ALL, "ru");
-	int new_pokup = 0;
 	std::random_device rd;//получение началоьного значения от аппаратного обеспечения
 	std::mt19937 gen(rd());//создайте объект класса engine
 	std::uniform_int_distribution<> digitdist(1, 50);//диапазон для чисел
-	std::queue<int> queue;  // пустая очередь
-	std::queue<int> queue1;//очередь кассы 1
-	std::queue<int> queue2;//очередь кассы 2
-	std::queue<int> queue3;//очередь кассы 3
-
-	for (i; i <=digitdist(gen); i++) {
-		queue.push(i);
+	int size = 34;
+	rear = size;
+	if (size > 0 and size < 16) {
+		k1 = true;
+		size1 = size;
+		size2 = 0;
+		size3 = 0;
 	}
-	while (queue.size() != 0) {
-		std::cout << "\x1B[2J\x1B[H";
-		if (queue.size() > 0 and queue.size() < 16) {
-			k1 = true;
+	if (size > 15 and size < 31) {
+		k1 = true;
+		k2 = true;
+		size1 = size/2;
+		if (size%2==0)
+		{
+			size2 = size / 2;
 		}
-		if (queue.size() > 15 and queue.size() < 31) {
-			k1 = true;
-			k2 = true;
+		else {
+			size2 = size / 2+1;
 		}
-		if (queue.size() > 30) {
-			k1 = true;
-			k2 = true;
-			k3 = true;
+		size3 = 0;
+	}
+	if (size > 30) {
+		k1 = true;
+		k2 = true;
+		k3 = true;
+		size1 = size / 3;
+		size2 = size / 3;
+		if (size % 3 == 0)
+		{
+			size3 = size / 3;
 		}
+		else {
+			size3 = size / 3;
+		}
+	}
+	int* mass = new int[size];
+	int* mass1 = new int[size1];
+	int* mass2 = new int[size2];
+	int* mass3 = new int[size3];
+	for (int i=0; i <size; i++) {
+		mass[i] = i + 1;
+	}
+	while (mass[rear] - mass[front] != 0) {
+		cout << "\x1B[2J\x1B[H";
+		
 		cout << "___| ";
 		if (k1 == true and k2 == false and k3 == false) {
-			while (queue.size() != 0) {
-				queue1.push(queue.front());
-				queue.pop();
+			for (int j = 0; j < size; j++) {
+				mass1[j] = mass[j];
 			}
 		}
 		if (k1 == true and k2 == true and k3 == false) {
-			while (queue.size() != 0) {
-				queue1.push(queue.front());
-				queue.pop();
-				if (queue.size() != 0) {
-					queue2.push(queue.front());
-					queue.pop();
+			int l = 0;
+			for (int j = 0; j < size; j++) {
+				mass1[j] = mass[l];
+				l++;
+				if (l == size) {
+					break;
+				}
+				mass2[j] = mass[l];
+				l++;
+				if (l == size) {
+					break;
 				}
 			}
 		}
 		if (k1 == true and k2 == true and k3 == true) {
-			while (queue.size() != 0) {
-				queue1.push(queue.front());
-				queue.pop();
-				if (queue.size() != 0) {
-					queue2.push(queue.front());
-					queue.pop();
+			int l = 0;
+			for (int j = 0; j < size; j++) {
+				mass1[j] = mass[l];
+				l++;
+				if (l == size) {
+					break;
 				}
-				if (queue.size() != 0) {
-					queue3.push(queue.front());
-					queue.pop();
+				mass2[j] = mass[l];
+				l++;
+				if (l == size) {
+					break;
 				}
-			}
+				mass3[j] = mass[l];
+				l++;
+				}
 		}
-		std::queue<int> queue12 = queue1;
-		std::queue<int> queue22 = queue2;
-		std::queue<int> queue32 = queue3;
-		while (queue1.size() != 0) {
-			cout << queue1.front() << " ";
-			queue1.pop();
-		}
-		cout << "\n___| ";
-		while (queue2.size() != 0 and k2 == true) {
-			cout << queue2.front() << " ";
-			queue2.pop();
-		}
-		cout << "\n___| ";
-		while (queue3.size() != 0 and k3 == true) {
-			cout << queue3.front() << " ";
-			queue3.pop();
-		}
-		work(queue12, queue22, queue32, k1, k2, k3);
-		for ( i; i <= digitdist(gen); i++) {
-			queue.push(i);
-		}
+			work(mass1, mass2, mass3, k1, k2, k3, size1,size2, size3);
 	}
 }
 

@@ -4,4 +4,4 @@
 #include <chrono>
 #include <thread>
 using namespace std;
-void work(std::queue<int> queue1, std::queue<int> queue2, std::queue<int> queue3, bool k1, bool k2, bool k3);
+void work(int* mass1 , int* mass2, int* mass3, bool k1, bool k2, bool k3, int size1, int size2, int size3);
