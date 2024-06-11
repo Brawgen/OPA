@@ -1,6 +1,6 @@
 #include "work.h"
 
-void work(int* mass1, int* mass2, int* mass3, bool k1, bool k2, bool k3, int size1, int size2, int size3 )
+void work(int* mass1, int* mass2, int* mass3, int size1, int size2, int size3 )
 {
 	std::this_thread::sleep_for(std::chrono::seconds(1));
 	std::cout << "\x1B[2J\x1B[H";
@@ -52,7 +52,7 @@ void work(int* mass1, int* mass2, int* mass3, bool k1, bool k2, bool k3, int siz
 		for (int j = 0; j < size31; j++) {
 			mass31[j] = mass3[j + 1];
 		}
-		work(mass11, mass21, mass31, k1, k2, k3,size11,size21,size31);
+		work(mass11, mass21, mass31, size11, size21, size31);
 		delete[] mass11;
 		delete[] mass21;
 		delete[] mass31;

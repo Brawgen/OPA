@@ -104,7 +104,7 @@ int main()
 				}
 			}
 		}
-	work(mass1, mass2, mass3, k1, k2, k3, size1,size2, size3);
+	work(mass1, mass2, mass3, size1,size2, size3);
 	size = 0;
 	}
 	delete[] mass;
