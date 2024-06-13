@@ -3,7 +3,7 @@
 void work(int* mass1, int* mass2, int* mass3, int size1, int size2, int size3 )
 {
 	std::this_thread::sleep_for(std::chrono::seconds(1));
-	std::cout << "\x1B[2J\x1B[H";
+	system("cls");
 	if ((size1+size2+size3)!=0 )
 	{
 		cout << "__" << mass1[0] << "| ";

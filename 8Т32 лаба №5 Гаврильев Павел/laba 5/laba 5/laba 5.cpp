@@ -18,7 +18,7 @@ int main()
 	std::random_device rd;//получение началоьного значения от аппаратного обеспечения
 	std::mt19937 gen(rd());//создайте объект класса engine
 	std::uniform_int_distribution<> digitdist(1, 50);//диапазон для чисел
-	int size = digitdist(gen);
+	int size = 100;
 	rear = size;
 	if (size > 0 and size < 16) {
 		k1 = true;
@@ -61,7 +61,7 @@ int main()
 		mass[i] = i + 1;
 	}
 	while (size!=0) {
-		cout << "\x1B[2J\x1B[H";
+		system("cls");
 		
 		cout << "___|\n___|\n___|";
 		if (k1 == true and k2 == false and k3 == false) {
